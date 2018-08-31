@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="Lydia_new_pj.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+
+    //I have placed my javascript code inline no need to include the js link in here//
+    
+    function messageUser(){
+        var myValue = document.getElementById('name').value;// this function gets the value entered and stores it in myValue variable.
+        if (myValue.length == 0) {// I'm checking if the length of the value entered is nothing. Meaning no value at all.
+            alert(' Please enter areal value in the first text box !');// I'm waarnig the user to enter a real value if there's none.
+            return;
+        }else{// I'm checking if the a real value has been entered and hence thanking the user in the alert box
+            alert('Thank you for filling out the form, welcome back');
+        }
+    }
+    </script>
+    <title>Last Project</title>
+</head>
+<body>
+    <header>
+        <h1>Worker Application Form</h1>
+    </header>
+    
+    <div class="container">
+        
+        <h2>Fill in the form to get the recruited into our company:</h2>
+        <div id="blanks">
+           <form>
+             <div class="form-group">
+                <label for="name">SIR NAME</label>
+                <input id="name" class="form-control" type="text">
+             </div>
+              <div class="form-group">
+                 <label for="name">MAIDEN NAME</label>
+                 <input id="name" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                 <label for="Address">PHONE NUMBER</label>
+                 <input id="Address" class="form-control" type="text/numbers">
+              </div>
+              <div class="form-group">
+                 <label for="Address">EMAIL</label>
+                 <input id="Address" class="form-control" type="text/numbers">
+              </div>
+              <div class="form-group">
+                 <label for="type">JOB EXPERIENCE</label>
+                 <input id="type" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                 <label for="name">ID NUMBER</label>
+                 <input id="name" class="form-control" type="text">
+              </div>
+              <div class="send">
+               <button type="button" onclick="messageUser()">submit</button> <!--This fuction call fires the submit button into action-->
+             </div>
+            </form>
+              <h3>More Details</h3>
+              <p>We will inform you if you passed our requirements</p>
+              <p>If you have any inquires contact us on:</p>
+              <ol>
+                <li>Rosemary Ashioya - 0701834793 </li>
+                <li>Patricia .W - 0701346793 </li>
+                <li>Phoebe Karanja - 0795413793 </li>
+                <li>Lydia Kinyanjui - 07946588 </li>
+              </ol>
+           </body>
+       </html>
